@@ -6,7 +6,7 @@ build:
 components:
   - name: OpenSearch
     repository: https://github.com/Korpics/OpenSearch.git
-    ref: 's390x'
+    ref: "s390x"
     checks:
       - gradle:publish
       - gradle:properties:version
