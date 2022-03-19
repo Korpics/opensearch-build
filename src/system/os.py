@@ -10,7 +10,7 @@ import subprocess
 
 def current_architecture() -> str:
     architecture = subprocess.check_output(["uname", "-m"]).decode().strip()
-    if architecture == "x86_64":
+    if architecture == "s390x":
         return "x64"
     elif architecture == "aarch64" or architecture == "arm64":
         return "arm64"
